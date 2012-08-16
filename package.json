@@ -12,7 +12,7 @@
 
     "dependencies": {
         "zombie": "== 0.12.15",
-        "funkit": "== 0.3.4"
+        "funkit": "== 0.3.5"
     },
 
     "repository": {
