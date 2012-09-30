@@ -12,7 +12,8 @@
 
     "dependencies": {
         "zombie": "== 0.12.15",
-        "funkit": "== 0.4.6"
+        "funkit": "== 0.4.6",
+        "date-utils": "== 1.2.11"
     },
 
     "repository": {
