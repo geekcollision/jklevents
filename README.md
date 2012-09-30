@@ -8,5 +8,5 @@ If you decide to use the data in a public manner, remember to add attribution to
 
 ## License
 
-jkl-event-scraper is available under MIT. See [LICENSE](https.//github.com/koodilehto/jkl-event-scraper/blob/master/LICENSE) for more details.
+jkl-event-scraper is available under MIT. See [LICENSE](https://github.com/koodilehto/jkl-event-scraper/blob/master/LICENSE) for more details.
 
