@@ -19,13 +19,13 @@
 
     "repository": {
         "type": "git",
-        "url": "https://bebraw@github.com/bebraw/jkl-event-scraper.git"
+        "url": "git@github.com:koodilehto/jkl-event-scraper.git"
     },
 
-    "homepage": "https://github.com/bebraw/jkl-event-scraper",
+    "homepage": "https://github.com/koodilehto/jkl-event-scraper",
 
     "bugs": {
-        "url": "https://github.com/bebraw/jkl-event-scraper/issues"
+        "url": "https://github.com/koodilehto/jkl-event-scraper/issues"
     },
 
     "keywords": ["scraping"]
