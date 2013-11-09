@@ -8,4 +8,8 @@ try {
 }
 catch(e) {}
 
-module.exports = parseEnv(process.env, configTemplate, config);
+conf = parseEnv(process.env, configTemplate, config);
+
+conf.calendar.domain += '/calendar';
+
+module.exports = conf;
