@@ -8,6 +8,9 @@
     "node": "0.8.x",
     "npm": "1.x"
   },
+  "scripts": {
+    "start": "node ./serve.js"
+  },
   "dependencies": {
     "zombie": "== 1.4.1",
     "funkit": "== 0.4.6",
@@ -24,11 +27,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:koodilehto/jkl-event-scraper.git"
+    "url": "git@github.com:geekcollision/jkl-event-scraper.git"
   },
-  "homepage": "https://github.com/koodilehto/jkl-event-scraper",
+  "homepage": "https://github.com/geekcollision/jkl-event-scraper",
   "bugs": {
-    "url": "https://github.com/koodilehto/jkl-event-scraper/issues"
+    "url": "https://github.com/geekcollisionn/jkl-event-scraper/issues"
   },
   "keywords": [
     "scraping"
