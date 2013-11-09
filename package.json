@@ -1,33 +1,32 @@
 {
-    "name": "jkl-event-scraper",
-    "private": true,
-    "description": "Jkl event scraper",
-    "author": "Juho Vepsalainen <bebraw@gmail.com>",
-    "version": "0.1.0",
-
-    "engines": {
-        "node": "0.8.x",
-        "npm": "1.x"
-    },
-
-    "dependencies": {
-        "zombie": "== 1.4.1",
-        "funkit": "== 0.4.6",
-        "date-utils": "== 1.2.11",
-        "commander": "== 1.0.5",
-        "osmgeocoder": "== 0.0.1"
-    },
-
-    "repository": {
-        "type": "git",
-        "url": "git@github.com:koodilehto/jkl-event-scraper.git"
-    },
-
-    "homepage": "https://github.com/koodilehto/jkl-event-scraper",
-
-    "bugs": {
-        "url": "https://github.com/koodilehto/jkl-event-scraper/issues"
-    },
-
-    "keywords": ["scraping"]
+  "name": "jkl-event-scraper",
+  "private": true,
+  "description": "Jkl event scraper",
+  "author": "Juho Vepsalainen <bebraw@gmail.com>",
+  "version": "0.1.0",
+  "engines": {
+    "node": "0.8.x",
+    "npm": "1.x"
+  },
+  "dependencies": {
+    "zombie": "== 1.4.1",
+    "funkit": "== 0.4.6",
+    "date-utils": "== 1.2.11",
+    "commander": "== 1.0.5",
+    "osmgeocoder": "== 0.0.1",
+    "cheerio": "~0.12.3",
+    "request": "~2.27.0",
+    "async": "~0.2.9"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:koodilehto/jkl-event-scraper.git"
+  },
+  "homepage": "https://github.com/koodilehto/jkl-event-scraper",
+  "bugs": {
+    "url": "https://github.com/koodilehto/jkl-event-scraper/issues"
+  },
+  "keywords": [
+    "scraping"
+  ]
 }
