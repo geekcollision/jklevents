@@ -2,6 +2,10 @@
 var express = require('express');
 
 var config = require('./config');
+
+config.calendar.domain += '/calendar';
+var calendar = require('./lib/calendar')(config.calendar);
+
 var cron = require('./lib/cron');
 
 
@@ -24,6 +28,14 @@ function main() {
 
     app.configure('development', function() {
         app.use(express.errorHandler());
+    });
+
+    app.get('/calendar.ics', function(req, res) {
+        // TODO: this should serve public/calendar.ics instead
+        // TODO: write calendar.ics using cron
+
+        // XXX
+        calendar.serve(res);
     });
 
     app.get('/' + apiPrefix + '/events', function(req, res) {
