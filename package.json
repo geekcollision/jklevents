@@ -17,7 +17,10 @@
     "cheerio": "~0.12.3",
     "request": "~2.27.0",
     "async": "~0.2.9",
-    "ent": "~0.1.0"
+    "ent": "~0.1.0",
+    "express": "~3.4.4",
+    "parse-env": "~0.1.4",
+    "cron": "~1.0.1"
   },
   "repository": {
     "type": "git",

@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 var VERSION = '0.1.0';
 
-var scraper = require('../lib/scraper');
+var scrape = require('../lib/scrape');
 
 var program = require('commander');
 
@@ -13,4 +13,6 @@ program.
     option('-s --silent', 'silent').
     parse(process.argv);
 
-scraper.scrape(program);
+scrape(program, function(err) {
+    if(err) return console.error(err);
+});
