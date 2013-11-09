@@ -6,10 +6,10 @@ If you decide to use the data in a public manner, remember to add attribution to
 
 ## Usage
 
-1. sudo npm install
-2. bin/scraper
+1. `npm install`
+2. `bin/scraper`
 
 ## License
 
-jkl-event-scraper is available under MIT. See [LICENSE](https://github.com/koodilehto/jkl-event-scraper/blob/master/LICENSE) for more details.
+`jkl-event-scraper` is available under MIT. See [LICENSE](https://github.com/koodilehto/jkl-event-scraper/blob/master/LICENSE) for more details.
 
