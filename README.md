@@ -4,10 +4,9 @@ Scrapes events from http://www.jyvaskylanseutu.fi/tapahtumat/main.php and output
 
 If you decide to use the data in a public manner, remember to add attribution to ["Jyväskylän seutu - Tapahtumakalenteri"](http://www.jyvaskylanseutu.fi/tapahtumat/main.php).
 
-## Usage
+## Schema
 
-1. `npm install`
-2. `bin/scraper`
+Root: `api/v1/events`. Only GET is allowed, see [rest-sugar documentation](https://github.com/bebraw/rest-sugar) for the whole API. In addition the data is available in iCalendar format through `calendar.ics`.
 
 ## License
 
