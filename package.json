@@ -1,7 +1,7 @@
 {
-  "name": "jkl-event-scraper",
+  "name": "jklevents",
   "private": true,
-  "description": "Jkl event scraper",
+  "description": "Jkl event scraper and API",
   "author": "Juho Vepsalainen <bebraw@gmail.com>",
   "version": "0.2.0",
   "engines": {
@@ -14,7 +14,6 @@
   "dependencies": {
     "funkit": "== 0.4.6",
     "date-utils": "== 1.2.11",
-    "commander": "== 1.0.5",
     "osmgeocoder": "== 0.0.1",
     "cheerio": "~0.12.3",
     "request": "~2.27.0",
@@ -29,13 +28,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:geekcollision/jkl-event-scraper.git"
+    "url": "git@github.com:geekcollision/jklevents.git"
   },
-  "homepage": "https://github.com/geekcollision/jkl-event-scraper",
+  "homepage": "https://github.com/geekcollision/jklevents",
   "bugs": {
-    "url": "https://github.com/geekcollisionn/jkl-event-scraper/issues"
+    "url": "https://github.com/geekcollisionn/jklevents/issues"
   },
   "keywords": [
-    "scraping"
+    "scraping",
+    "api"
   ]
 }
