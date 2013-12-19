@@ -4,19 +4,16 @@ var async = require('async');
 var sugar = require('object-sugar');
 var CronJob = require('cron').CronJob;
 
-var scrape = require('./scrape');
-var calendar = require('./calendar');
+var scrape = require('../lib/scrape');
+var calendar = require('../lib/calendar');
 
 var Event = require('../models').Event;
+var config = require('../config');
 
 
-module.exports = init;
-
-function init(config, cb) {
-    loadData(config, cb);
-
-    if(config.cron) new CronJob(config.cron, loadData.bind(null, config, cb), true);
-}
+module.exports = function(cb) {
+    loadData(config.calendar, cb);
+};
 
 function loadData(config, cb) {
     sugar.removeAll(Event, function(err) {
@@ -28,7 +25,7 @@ function loadData(config, cb) {
             async.each(events, sugar.create.bind(null, Event), function(err) {
                 if(err) return cb(err);
 
-                writeCalendar(config.calendar, events, cb);
+                writeCalendar(config, events, cb);
             });
         });
     });
@@ -53,4 +50,3 @@ function writeCalendar(config, events, cb) {
 
     cal.save('./public/calendar.ics', cb);
 }
-

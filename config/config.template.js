@@ -3,5 +3,7 @@ module.exports = {
         domain: 'localhost',
     },
     port: 8000,
-    cron: '' // cron pattern
+    tasks: {
+        load_data: {hour: 1}
+    }
 };

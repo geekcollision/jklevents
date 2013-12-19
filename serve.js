@@ -2,15 +2,27 @@
 var express = require('express');
 var rest = require('rest-sugar');
 var sugar = require('object-sugar');
+var taskist = require('taskist');
 
 var config = require('./config');
-var cron = require('./lib/cron');
 var models = require('./models');
+var tasks = require('./tasks');
 
 
 main();
 
+
 function main() {
+    taskist(config.tasks, tasks, {
+        instant: function(err) {
+            if(err) return console.error(err);
+
+            serve();
+        }
+    });
+}
+
+function serve() {
     var app = express();
     var port = config.port;
 
@@ -36,10 +48,6 @@ function main() {
 
     api.pre(function() {
         api.use(rest.only('GET'));
-    });
-
-    cron(config, function(err) {
-        if(err) console.error(err);
     });
 
     process.on('exit', terminator);
