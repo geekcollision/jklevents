@@ -1,4 +1,4 @@
-var fs = require('fs');
+'use strict';
 
 var async = require('async');
 var sugar = require('object-sugar');
@@ -16,13 +16,19 @@ module.exports = function(cb) {
 
 function loadData(config, cb) {
     sugar.removeAll(Event, function(err) {
-        if(err) return cb(err);
+        if(err) {
+            return cb(err);
+        }
 
         scrape(function(err, events) {
-            if(err) return cb(err);
+            if(err) {
+                return cb(err);
+            }
 
             async.each(events, sugar.create.bind(null, Event), function(err) {
-                if(err) return cb(err);
+                if(err) {
+                    return cb(err);
+                }
 
                 writeCalendar(config, events, cb);
             });
