@@ -2,7 +2,6 @@ var fs = require('fs');
 
 var async = require('async');
 var sugar = require('object-sugar');
-var CronJob = require('cron').CronJob;
 
 var scrape = require('../lib/scrape');
 var calendar = require('../lib/calendar');
