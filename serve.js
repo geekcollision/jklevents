@@ -42,6 +42,13 @@ function serve() {
         app.use(express.errorHandler());
     });
 
+    app.all('*', function(req, res, next) {
+        res.header('Access-Control-Allow-Origin', '*');
+        res.header('Access-Control-Allow-Headers', 'X-Requested-With');
+
+        next();
+    });
+
     app.get('/calendar.ics', function(req, res) {
         res.sendfile(__dirname + '/public/calendar.ics');
     });
